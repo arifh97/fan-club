@@ -1,10 +1,11 @@
 body {
     font-size: 18px;
-    line-height: (27px/18px);
+    line-height: calc(27px/18px);
     font-family: 'Neue Machina', sans-serif;
     font-weight: 400;
     background-color: #010101;
     color: $white;
+    overflow-x: hidden;
 }
 
 html,
@@ -87,4 +88,41 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.section{
+    &-title{
+        margin-bottom: 80px;
+        & h3{
+            @include font-38;
+            &+p{
+                @include font-38;
+                font-weight: 400;
+            }
+        }
+        
+    }
+}
+
+.social_icons{
+    @include flex;
+    justify-content: center;
+    gap: 40px;
+    & a{        
+        font-size: 30px;
+        color: $white;
+        &:hover{
+            opacity: .8;
+        }
+    }
+}
+
+.progress{
+    border-radius: 0 !important;
+    --bs-progress-height: 17px;
+    background-color: rgba($color: $primary, $alpha: .20);
+    &-bar{
+        --bs-progress-bar-bg: $primary;
+        background-color: rgba($color: $primary, $alpha: 1);
+    }
 }
