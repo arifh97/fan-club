@@ -39,7 +39,7 @@ function ApeFunProgress ()  {
                             {
                                 progress_data.map((el, i) => {
                                 return(
-                                    <div className="progress_single_items">
+                                    <div className="progress_single_items" key={i}>
                                         <span className="phase_title">{el.phase_title}</span>
                                         <h4>{el.progress_title}</h4>
                                         
