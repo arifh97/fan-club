@@ -39,7 +39,9 @@ a {
     text-decoration: none !important;
     @include transition;
 }
-
+.container{
+    max-width: 1235px;
+}
 input,
 textarea,
 button {
