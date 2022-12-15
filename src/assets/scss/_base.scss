@@ -43,6 +43,19 @@ a {
     text-decoration: none !important;
     @include transition;
 }
+
+.boxed-btn{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 120%;
+    color: $white;
+    padding: 18px 36px;
+    display: inline-block;
+    background: $blackLight;
+    border: 1px solid $black;
+    border-radius: 8px;
+    margin-top: 30px;
+}
 .container{
     max-width: 1235px;
 }

@@ -71,7 +71,9 @@ function Hero() {
                                         <span>Secounds</span>
                                     </div>
                                 </div>
-                                <span>Phase I Mint Starts In</span>
+                                <div className="countdown_box_bottom">
+                                    <span className="experience">More than 10 Years of Experience</span>
+                                </div>
                             </div>
                         </div>
                     </Col>

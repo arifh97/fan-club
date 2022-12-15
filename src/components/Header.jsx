@@ -6,8 +6,8 @@ import SiteLogo from '../assets/img/logo.png';
 
 function Header ()  {
     return(
-        <header className="heading">
-             <Navbar collapseOnSelect expand="lg"  variant="light" sticky="top">
+        <header className="heading"  sticky="top">
+             <Navbar collapseOnSelect expand="lg"  variant="light">
                 <Container>
                     <Navbar.Brand href="#home"><img src={SiteLogo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -19,9 +19,9 @@ function Header ()  {
                         <Nav.Link href="#pricing">Roadmap</Nav.Link>
                         <Nav.Link href="#pricing">Faqs</Nav.Link>
                     </Nav>
-                    <Nav>
-                        <Nav.Link href="#deets">Join Discord</Nav.Link>
-                    </Nav>
+                    <div className="header_right">
+                        <Nav.Link href="#deets" className="boxed-btn">Join Discord</Nav.Link>
+                    </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
