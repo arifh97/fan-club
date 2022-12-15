@@ -171,9 +171,83 @@
                     transform: translate(-50%, -50%);
                 }
             }
+
+// progress_section
+.progress {
+    &_section {
+        position: relative;
+        z-index: 1;
+        &::before{
+            @include color_shape();
+            bottom: 0;
+            left: -300px;
+        }
+        &_content {
+            padding-right: 100px;
+            & h2 {
+                @include font-50;
+                margin-bottom: 20px;
+            }
+            & p {
+                margin-bottom: 35px;
+                & strong{
+                    font-weight: 800;
+                }
+            }
+            & .supply{
+                &_price{
+                    margin-bottom: 45px;
+                }
+                &_item{
+                    width: 50%;
+                    max-width: 100%;
+                    flex: 0 0 auto;
+                    &> span{
+                        font-size: 18px;
+                        line-height: 1.5;
+                        display: block;
+                        margin-bottom: 5px;
+                        @include sm{
+                            font-size: 16px
+                        }
+                    }
+                    & h3{
+                        @include font-28;
+                        margin-bottom: 0;
+                    }
+                    &.price{
+                        & h3{
+                            @include font-21;
+                            margin-bottom: 0px;
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+        }
+        & .arrow_down{
+            margin-bottom: 80px;
+        }
+    }
+    &_single{
+        &_items{
+            &:not(:last-child){
+                margin-bottom: 25px;
+            }
+            & span{
+                @include font-18;
+                margin-bottom: 10px;
+            }
+            & h4{
+                @include font-21;
+                margin-bottom: 30px;
+                font-weight: 800;
+
+            }
         }
     }
 }
+
 
 .about-area{
     padding: 106px 0;
@@ -205,16 +279,17 @@
 
 
 
-
-
-
 // marquee_section
 .marquee {
     &_section {
         margin-top: 215px;
+        position: relative;
+        z-index: 1;
+
         & .overlay {
             display: none;
         }
+
         & figure {
             position: relative;
             z-index: 1;
@@ -224,6 +299,7 @@
             overflow: hidden;
             margin-right: 30px;
             margin-bottom: 30px;
+
             & img {
                 @include img(cover);
             }
@@ -232,16 +308,62 @@
 }
 
 // accordion section
-.accordion{
-    &-item{
+.faq {
+    &-area {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            @include color_shape();
+            top: -60px;
+            right: -100px;
+        }
+
+        & .arrow_down {
+            margin-bottom: 60px;
+        }
+
+        & .accordion {
+            margin-bottom: 105px;
+        }
+
+        &-quote {
+            border-top-left-radius: 28px;
+            border-top-right-radius: 28px;
+            text-align: center;
+            padding: 30px 14%;
+            padding-top: 40px;
+            position: relative;
+            z-index: 1;
+
+            & h3 {
+                @include font-38;
+                color: $black;
+                margin-bottom: 0;
+            }
+
+            & img {
+                position: absolute;
+                top: -20px;
+                left: 50px;
+            }
+        }
+    }
+}
+
+.accordion {
+    &-item {
         background-color: transparent;
         border: none;
-        &:not(:last-child){
+        padding: 24px 0px;
+
+        &:not(:last-child) {
             border-bottom: 1px solid $border;
         }
     }
-    &-header{
-        & button{
+
+    &-header {
+        & button {
             background-color: transparent !important;
             border-radius: 0px;
             box-shadow: 0 0 0 !important;
@@ -249,13 +371,112 @@
             padding: 0px 0px;
             font-size: 21px;
             line-height: 1.2;
-            color: $white;
+            color: $white !important;
+
+            &::after {
+                content: "+";
+                background-image: none !important;
+                transform: rotate(0) !important;
+                width: 20px;
+                height: 20px;
+                font-weight: 500;
+                font-size: 16px;
+                border: 1px solid $primary;
+                color: $primary;
+                @include flex;
+                justify-content: center;
+                border-radius: 100%;
+            }
+
+            &[aria-expanded=false] {
+                &::after {
+                    content: "-";
+                    line-height: 15px;
+                    display: block;
+                    text-align: center;
+                }
+            }
         }
     }
-    &-body{
+
+    &-body {
         font-size: 16px;
         line-height: 1.5;
         color: $text;
-        padding: 0 0;
+        padding: 0;
+        padding-top: 6px;
+        padding-top: 8px;
     }
 }
+
+// footer
+.footer {
+    &_area {
+        position: relative;
+        z-index: 1;
+        padding-top: 90px;
+        padding-bottom: 200px;
+        background-image: url(../img/footer-bg.png);
+        background-size: 80%;
+        background-position: bottom center;
+        background-repeat: repeat-x;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 654px;
+            @include position_left;
+            z-index: -1;
+            background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0) 100%);
+        }
+
+        & .arrow_down {
+            position: absolute;
+            top: -100px;
+            right: 72px;
+            z-index: 0;
+        }
+    }
+
+    &_top_content {
+        margin-bottom: 80px;
+
+        & h4 {
+            @include font-28;
+            margin-bottom: 60px;
+        }
+
+        & p {
+            @include font-22;
+            line-height: (33px/22px);
+
+            &:not(:last-child) {
+                margin-bottom: 45px;
+            }
+        }
+    }
+
+    &_bottom {
+        & .logo {
+            width: 107px;
+            height: 107px;
+            border: 2px solid $primary;
+            overflow: hidden;
+            border-radius: 100%;
+            position: relative;
+            margin-bottom: 40px;
+
+            & img {
+                @include img(cover);
+            }
+        }
+
+        & p {
+            margin-top: 40px;
+            font-size: 16px;
+
+        }
+    }
+}
+
+// hello world

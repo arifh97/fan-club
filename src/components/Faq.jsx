@@ -9,15 +9,15 @@ function Faq ()  {
     return(
         <div className="faq-area">
             <Container>
-                <Row>
-                    <Col xs={12} className="text-center">
+                <Row className="justify-content-center">
+                    <Col xs={10} className="text-center">
                         <div className="arrow_down">
                             <figure>
                                 <img src={ArrowDwon} alt="" />
                             </figure>
                         </div>
                         <div className="section-title">
-                            <h5>A Sports collection built with utility and community at its foundation</h5>
+                            <h3 className='mb-4 mb-md-5'>A Sports collection built with utility and <span className="text-primary d-block">community at its foundation</span></h3>
                             <p>Once inside, you will have exclusive access to FAFC related drops, meetups and IRL events, and access to upcoming projects!</p>
                         </div>
                     </Col>
@@ -42,7 +42,7 @@ function Faq ()  {
                 </Row>
                 <Row>
                     <Col>
-                        <div className="quote_cta_area">
+                        <div className="faq-area-quote bg-primary">
                             <img src={QuoteImg} alt="" />
                             <h3>Football is not just a game, but an emotion for billion of people!</h3>
                         </div>
