@@ -5,6 +5,8 @@ import About from './components/About';
 import Fafc from './components/Fafc';
 import ApeFunProgress from './components/ApeFunProgress';
 import Marquee from './components/Marquee';
+import Faq from './components/Faq';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Fafc />
       <ApeFunProgress />
       <Marquee />
+      <Faq />
+      <Footer />
     </>
   );
 }
