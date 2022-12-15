@@ -48,9 +48,8 @@
 }
 
 // Hero Section
-
-.hero{
-    &-area{
+.hero {
+    &-area {
         background-color: $primary;
         background-image: url(../img/hero-bg.png);
         background-size: 100% 50%;
@@ -59,49 +58,58 @@
         padding-top: 251px;
         padding-bottom: 175px;
     }
-    &-content{
-        &-left{
+
+    &-content {
+        &-left {
             padding-right: 25px;
-            & span{
+
+            & span {
                 font-size: 28px;
                 line-height: 120%;
                 color: #010101;
                 font-weight: 400;
                 margin-bottom: 10px;
             }
-            & h1{
+
+            & h1 {
                 font-weight: 800;
                 font-size: 67px;
                 line-height: 120%;
                 color: #010101;
                 margin-bottom: 25px;
             }
-            & p{
+
+            & p {
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 150%;
                 color: #010101;
                 margin-right: 12%;
-                & b{
+
+                & b {
                     font-weight: 800;
                 }
             }
         }
-        &-right{
+
+        &-right {
             position: relative;
             z-index: 1;
             padding-left: 25px;
+
             .conut_down_box {
                 background: #101010;
                 border: 10px solid #98B500;
                 border-radius: 30px;
                 text-align: center;
                 padding: 36px 30px 43px 30px;
-                & h3{
+
+                & h3 {
                     font-weight: 800;
                     font-size: 28px;
                     line-height: 120%;
                 }
+
                 & .count_down_numbers {
                     display: flex;
                     justify-content: center;
@@ -109,11 +117,13 @@
                     text-align: center;
                     margin-top: 32px;
                     margin-bottom: 60px;
+
                     & .single_items {
                         padding: 35px 23px;
                         background: #212121;
                         border-radius: 15px;
-                        & h3{
+
+                        & h3 {
                             font-family: 'Inter';
                             font-style: normal;
                             font-weight: 500;
@@ -122,19 +132,21 @@
                             text-align: center;
                             color: $primary;
                         }
-                        & span{
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 120%;
-                        text-align: center;
-                        color: $white;
-                        opacity: 0.5;
+
+                        & span {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 120%;
+                            text-align: center;
+                            color: $white;
+                            opacity: 0.5;
                         }
                     }
                 }
-                & .experience{
+
+                & .experience {
                     font-weight: 400;
                     font-size: 18px;
                     line-height: 150%;
@@ -143,12 +155,14 @@
                     border-radius: 30px;
                     padding: 10px 30px;
                 }
+
                 & .countdown_box_bottom {
                     display: block;
                     padding-top: 36px;
                     border-top: 1px solid #212121;
                 }
             }
+
             & .count_down_box_hook {
                 background: #1C1C1C;
                 border-radius: 24px;
@@ -160,6 +174,7 @@
                 top: 0;
                 margin-top: -33px;
                 z-index: -1;
+
                 &:after {
                     position: absolute;
                     content: "";
@@ -171,7 +186,9 @@
                     transform: translate(-50%, -50%);
                 }
             }
-
+        }
+    }
+}
 // progress_section
 .progress {
     &_section {
@@ -448,7 +465,7 @@
 
         & p {
             @include font-22;
-            line-height: (33px/22px);
+            line-height:calc(33px/22px);
 
             &:not(:last-child) {
                 margin-bottom: 45px;
@@ -478,5 +495,3 @@
         }
     }
 }
-
-// hello world
