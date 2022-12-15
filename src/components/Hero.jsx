@@ -19,6 +19,24 @@ function Hero ()  {
                             <div className="count_down_box_hook"></div>
                             <div className="conut_down_box">
                                 <h3>Phase I Mint Starts In</h3>
+                                <div className="count_down_numbers">
+                                    <div className="single_items day">
+                                        <h3>00</h3>
+                                        <span>Days</span>
+                                    </div>
+                                    <div className="single_items hours">
+                                        <h3>05</h3>
+                                        <span>Hours</span>
+                                    </div>
+                                    <div className="single_items mins">
+                                        <h3>50</h3>
+                                        <span>Minutes</span>
+                                    </div>
+                                    <div className="single_items secounds">
+                                        <h3>00</h3>
+                                        <span>Secounds</span>
+                                    </div>
+                                </div>
                                 <span>Phase I Mint Starts In</span>
                             </div>
                         </div>

@@ -1,11 +1,25 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import SiteLogo from '../assets/img/logo.png';
-// import { FaTwitter } from 'react-icons/fa';
+import FooterarrowShap from '../assets/img/5.png';
+import FooterIcon from '../assets/img/footer-icon.svg';
+import { FaTwitter } from 'react-icons/fa';
+import { FaDiscord } from 'react-icons/fa';
+import { FaPaperPlane } from 'react-icons/fa';
+
 function Footer ()  {
     return(
-        <Footer className="footer_area">
+        <footer className="footer_area">
              <Container>
+             <Row>
+                    <Col xs={12} className="text-center">
+                        <div className="arrow_down">
+                            <figure>
+                                <img src={FooterarrowShap} alt="" />
+                            </figure>
+                        </div>
+                    </Col>
+                </Row>
                 <Row>
                     <Col>
                         <div className="footer_top_content">
@@ -16,14 +30,17 @@ function Footer ()  {
                         <div className="footer_bottom">
                             <img src={SiteLogo} alt="" />
                             <div className="social_icons">
-                                {/* <a href="/"><FaTwitter /></a> */}
+                                <a href="/"><FaTwitter /></a>
+                                <a href="/"><FaDiscord /></a>
+                                <a href="/"><FaPaperPlane /></a>
+                                <a href="/"> <img src={FooterIcon} alt="" /></a>
                             </div>
                             <p>Copyright © 2021. FAFC. All rights reserved.</p>
                         </div>
                     </Col>
                 </Row>
              </Container>
-        </Footer>
+        </footer>
     )
 }
 
