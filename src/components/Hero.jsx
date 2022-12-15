@@ -53,6 +53,24 @@ function Hero() {
                             <div className="count_down_box_hook"></div>
                             <div className="conut_down_box">
                                 <h3>Phase I Mint Starts In</h3>
+                                <div className="count_down_numbers">
+                                    <div className="single_items day">
+                                        <h3>{state.days > 0 ? state.days : '0'}</h3>
+                                        <span>Days</span>
+                                    </div>
+                                    <div className="single_items hours">
+                                        <h3>{state.hours > 0 ? state.hours : '00'}</h3>
+                                        <span>Hours</span>
+                                    </div>
+                                    <div className="single_items mins">
+                                        <h3>{state.minutes > 0 ? state.minutes : '00'}</h3>
+                                        <span>Minutes</span>
+                                    </div>
+                                    <div className="single_items secounds">
+                                        <h3>{state.seconds> 0 ? state.seconds : '00'}</h3>
+                                        <span>Secounds</span>
+                                    </div>
+                                </div>
                                 <span>Phase I Mint Starts In</span>
                             </div>
                         </div>

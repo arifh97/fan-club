@@ -1,6 +1,10 @@
 body {
     font-size: 18px;
+    line-height: (27px/18px);
+    font-family: 'Neue Machina', sans-serif;
     font-weight: 400;
+    background-color: #010101;
+    color: $white;
 }
 
 html,

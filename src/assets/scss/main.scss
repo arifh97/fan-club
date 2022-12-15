@@ -1,8 +1,59 @@
 @import '../scss/colors';
 @import '../scss/mixins';
 @import '../scss/media_quers';
+@import '../fonts/neue-machina/fonts';
 @import '../scss/base';
-// HEADER
-@import '../scss/header';
-// FOOTER
-@import '../scss/footer';
+@import '../scss/custom';
+
+
+// marquee_section
+.marquee {
+    &_section {
+        margin-top: 215px;
+        & .overlay {
+            display: none;
+        }
+        & figure {
+            position: relative;
+            z-index: 1;
+            width: 364px;
+            height: 360px;
+            border-radius: 30px;
+            overflow: hidden;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            & img {
+                @include img(cover);
+            }
+        }
+    }
+}
+
+// accordion section
+.accordion{
+    &-item{
+        background-color: transparent;
+        border: none;
+        &:not(:last-child){
+            border-bottom: 1px solid $border;
+        }
+    }
+    &-header{
+        & button{
+            background-color: transparent !important;
+            border-radius: 0px;
+            box-shadow: 0 0 0 !important;
+            border: none;
+            padding: 0px 0px;
+            font-size: 21px;
+            line-height: 1.2;
+            color: $white;
+        }
+    }
+    &-body{
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text;
+        padding: 0 0;
+    }
+}

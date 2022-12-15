@@ -4,6 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 import ArrowDwon from "../assets/img/57.png";
 import QuoteImg from "../assets/img/quote.png";
 import Faq_Data from '../utils/FaqData'
+
 function Faq ()  {
     return(
         <div className="faq-area">
@@ -27,10 +28,10 @@ function Faq ()  {
                         {
                             Faq_Data.map((el, i) => {
                             return (
-                                <Accordion.Item eventKey={i} key={i}>
+                                <Accordion.Item eventKey={`${i}`} key={i}>
                                 <Accordion.Header>{el.title}</Accordion.Header>
                                 <Accordion.Body>
-                                    {el.body}
+                                    <p>{el.body}</p>
                                 </Accordion.Body>
                                 </Accordion.Item>
                             )
