@@ -1,10 +1,9 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import SiteLogo from '../assets/img/logo.png';
-// import { FaTwitter } from 'react-icons/fa';
 function Footer ()  {
     return(
-        <Footer className="footer_area">
+        <footer className="footer_area">
              <Container>
                 <Row>
                     <Col>
@@ -15,15 +14,13 @@ function Footer ()  {
                         </div>
                         <div className="footer_bottom">
                             <img src={SiteLogo} alt="" />
-                            <div className="social_icons">
-                                {/* <a href="/"><FaTwitter /></a> */}
-                            </div>
+                            
                             <p>Copyright © 2021. FAFC. All rights reserved.</p>
                         </div>
                     </Col>
                 </Row>
              </Container>
-        </Footer>
+        </footer>
     )
 }
 
