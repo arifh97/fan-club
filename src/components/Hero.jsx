@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 function Hero() {
-    const [countdownDate] = useState(new Date('1/1/2023').getTime());
+    const [countdownDate] = useState(new Date('Dec 16, 2022 20:30:00').getTime());
     const [state, setState] = useState({
         days: 0,
         hours: 0,
