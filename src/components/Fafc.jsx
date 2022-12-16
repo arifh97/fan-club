@@ -19,7 +19,7 @@ function Fafc ()  {
                     <Col lg={6}>
                         <div className="fafc_content_left">
                           <h2><span>FAFC NFTs</span> are more than just an avatar!</h2>
-                          <p>Football Ape Fan Club is an NFT collection consisting of 7,910 FootballApeFC NFT on the Ethereum blockchain. We will create an NFT Metaverse. We will bring more utility for every NFT project. </p>
+                          <p>Football Ape Fan Club is an NFT collection consisting of <b>7,910 FootballApeFC NFT</b> on the Ethereum blockchain. We will create an NFT Metaverse. We will bring more utility for every NFT project. </p>
 
                           <p>Every FAFC holder will able to Claim a Mutant Football Ape and Baby Football Ape NFT for free. Only gas fees will be charged. </p>
                           <div className="example_box">
