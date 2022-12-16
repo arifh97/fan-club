@@ -2,25 +2,25 @@
     font-family: 'Neue Machina';
     font-style: normal;
     font-weight: 300;
-    font-display: swap;
-    src: url('NeueMachina-Light.woff2') format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: url('NeueMachina-Light.woff2') format('woff2'),
+        url('NeueMachina-Light.woff') format('woff'),
+        url('NeueMachina-Light.otf') format('otf');
 }
 
 @font-face {
     font-family: 'Neue Machina';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
-    src: url('NeueMachina-Regular.woff2') format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: url('NeueMachina-Regular.woff2') format('woff2'),
+        url('NeueMachina-Regular.woff') format('woff'),
+        url('NeueMachina-Regular.otf') format('otf');
 }
 
 @font-face {
     font-family: 'Neue Machina';
     font-style: normal;
     font-weight: 800;
-    font-display: swap;
-    src: url('NeueMachina-Ultrabold.woff2') format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: url('NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('NeueMachina-Regular.woff') format('woff'),
+        url('NeueMachina-Regular.otf') format('otf');
 }

@@ -20,7 +20,7 @@ function Header ()  {
                         <Nav.Link href="#pricing">Faqs</Nav.Link>
                     </Nav>
                     <div className="header_right">
-                        <Nav.Link href="#deets" className="boxed-btn">Join Discord</Nav.Link>
+                        <Nav.Link href="#deets" className="boxed-btn mt-0">Join Discord</Nav.Link>
                     </div>
                     </Navbar.Collapse>
                 </Container>

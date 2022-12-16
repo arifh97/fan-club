@@ -126,10 +126,13 @@
         font-size: 30px;
     }
     @include md {
-        font-size: 26px;
+        font-size: 30px;
     }
     @include sm {
-        font-size: 22px;
+        font-size: 26px;
+    }
+    @include ssm {
+        font-size: 24px;
     }
 }
 
