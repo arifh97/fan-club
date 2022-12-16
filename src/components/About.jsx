@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import AboutShap from "../assets/img/about-shap.png";
+// import AboutShap from "../assets/img/about-shap.png";
 import AboutGalleryImg1 from "../assets/img/about/about-gallery-img1.png";
 import AboutGalleryImg2 from "../assets/img/about/about-gallery-img2.png";
 import AboutGalleryImg3 from "../assets/img/about/about-gallery-img3.png";

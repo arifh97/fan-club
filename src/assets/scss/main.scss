@@ -6,19 +6,22 @@
 @import '../scss/custom';
 
 // Header_Section
-.heading{
+.heading {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
     padding: 20px 0;
-     & .navbar-nav{
+    display: none;
+    & .navbar-nav {
         gap: 35px;
-        @include mmd(){
+
+        @include mmd() {
             gap: 15px;
         }
-        & a{
+
+        & a {
             display: inline-block;
             font-weight: 400;
             font-size: 18px;
@@ -26,25 +29,29 @@
             color: #000000;
             padding: 10px 32px;
             transition: all .3s ease-in-out;
-            &:hover{
+
+            &:hover {
                 opacity: .5;
             }
-            @include mmd(){
+
+            @include mmd() {
                 padding: 10px;
                 border-bottom: 1px solid #000;
             }
         }
-        & .boxed-btn{
+
+        & .boxed-btn {
             color: $white;
-            padding:10px 20px;
+            padding: 10px 20px;
             margin: 0;
-         }
-     }
-     & .navbar-collapse.show {
+        }
+    }
+
+    & .navbar-collapse.show {
         background: #CCF300;
         padding: 15px 0;
     }
-     
+
 }
 
 // Hero Section
@@ -61,8 +68,6 @@
 
     &-content {
         &-left {
-            padding-right: 25px;
-
             & span {
                 font-size: 28px;
                 line-height: 120%;
@@ -84,7 +89,7 @@
                 font-size: 18px;
                 line-height: 150%;
                 color: #010101;
-                margin-right: 12%;
+                margin-right: 3%;
 
                 & b {
                     font-weight: 800;
@@ -189,51 +194,63 @@
         }
     }
 }
+
 // progress_section
 .progress {
     &_section {
         position: relative;
         z-index: 1;
-        &::before{
+
+        &::before {
             @include color_shape();
             bottom: 0;
             left: -300px;
         }
+
         &_content {
             padding-right: 100px;
+
             & h2 {
                 @include font-50;
                 margin-bottom: 20px;
             }
+
             & p {
                 margin-bottom: 35px;
-                & strong{
+
+                & strong {
                     font-weight: 800;
                 }
             }
-            & .supply{
-                &_price{
+
+            & .supply {
+                &_price {
                     margin-bottom: 45px;
                 }
-                &_item{
+
+                &_item {
                     width: 50%;
                     max-width: 100%;
                     flex: 0 0 auto;
-                    &> span{
+
+                    &>span {
                         font-size: 18px;
                         line-height: 1.5;
                         display: block;
                         margin-bottom: 5px;
-                        @include sm{
+
+                        @include sm {
                             font-size: 16px
                         }
                     }
-                    & h3{
+
+                    & h3 {
                         @include font-28;
                         margin-bottom: 0;
                     }
-                    &.price{
-                        & h3{
+
+                    &.price {
+                        & h3 {
                             @include font-21;
                             margin-bottom: 0px;
                             font-weight: 800;
@@ -242,20 +259,24 @@
                 }
             }
         }
-        & .arrow_down{
+
+        & .arrow_down {
             margin-bottom: 80px;
         }
     }
-    &_single{
-        &_items{
-            &:not(:last-child){
+
+    &_single {
+        &_items {
+            &:not(:last-child) {
                 margin-bottom: 25px;
             }
-            & span{
+
+            & span {
                 @include font-18;
                 margin-bottom: 10px;
             }
-            & h4{
+
+            & h4 {
                 @include font-21;
                 margin-bottom: 30px;
                 font-weight: 800;
@@ -266,12 +287,13 @@
 }
 
 
-.about-area{
+.about-area {
     padding: 106px 0;
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-    &::after{
+
+    &::after {
         position: absolute;
         content: "";
         right: -35%;
@@ -283,41 +305,45 @@
         filter: blur(300px);
         z-index: -1;
     }
+
     & .about_left {
         position: relative;
+
         & .about_gallery_img_box {
             position: relative;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 10px;
-                justify-content: center;
-                align-items: center;
-                padding: 60px;
-                padding-top: 90px;
-                width: 540px;
-                margin: 0 auto;
-                z-index: 1;
-                &:before{
-                    position: absolute;
-                    content: "";
-                    left: 15px;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-image: url("../img/about-left-gallery-shap.png");
-                    background-repeat: no-repeat;
-                    background-size: 100% 100%;
-                    background-position: center;
-                }
-            & figure{
-                margin-bottom: 0;    
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            padding-top: 90px;
+            width: 540px;
+            margin: 0 auto;
+            z-index: 1;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 15px;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url("../img/about-left-gallery-shap.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+
+            & figure {
+                margin-bottom: 0;
                 width: 128px;
                 height: 128px;
             }
         }
     }
 
-    & .about_content_right{
+    & .about_content_right {
         & span {
             font-weight: 400;
             font-size: 28px;
@@ -433,8 +459,8 @@
                 font-size: 16px;
                 border: 1px solid $primary;
                 color: $primary;
-                @include flex;
-                justify-content: center;
+                line-height: 13px;
+                text-align: center;
                 border-radius: 100%;
             }
 
@@ -442,8 +468,6 @@
                 &::after {
                     content: "-";
                     line-height: 15px;
-                    display: block;
-                    text-align: center;
                 }
             }
         }
@@ -498,7 +522,7 @@
 
         & p {
             @include font-22;
-            line-height:calc(33px/22px);
+            line-height: calc(33px/22px);
 
             &:not(:last-child) {
                 margin-bottom: 45px;
