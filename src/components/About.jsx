@@ -2,14 +2,6 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 // import AboutShap from "../assets/img/about-shap.png";
 import AboutGalleryImg1 from "../assets/img/about/about-gallery-img1.png";
-import AboutGalleryImg2 from "../assets/img/about/about-gallery-img2.png";
-import AboutGalleryImg3 from "../assets/img/about/about-gallery-img3.png";
-import AboutGalleryImg4 from "../assets/img/about/about-gallery-img4.png";
-import AboutGalleryImg5 from "../assets/img/about/about-gallery-img5.png";
-import AboutGalleryImg6 from "../assets/img/about/about-gallery-img6.png";
-import AboutGalleryImg7 from "../assets/img/about/about-gallery-img7.png";
-import AboutGalleryImg8 from "../assets/img/about/about-gallery-img8.png";
-import AboutGalleryImg9 from "../assets/img/about/about-gallery-img9.png";
 function About ()  {
     return(
         <div className="about-area">
@@ -20,30 +12,6 @@ function About ()  {
                            <div className="about_gallery_img_box">
                                 <figure>
                                     <img src={AboutGalleryImg1} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg2} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg3} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg4} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg5} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg6} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg7} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg8} alt="" />
-                                </figure>
-                                <figure>
-                                    <img src={AboutGalleryImg9} alt="" />
                                 </figure>
                            </div>
                         </div>

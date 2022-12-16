@@ -72,7 +72,7 @@ function Hero() {
                                     </div>
                                 </div>
                                 <div className="countdown_box_bottom">
-                                    <span className="experience">More than 10 Years of Experience</span>
+                                    <span className="experience">Instead of More than 10 Years of experience. Put Football Ape Fan Club Phase I Mint Starts Today @ 13:30 UTC!</span>
                                 </div>
                             </div>
                         </div>

@@ -26,10 +26,10 @@ function Footer ()  {
                         <div className="footer_bottom text-center">
                             <div className="logo mx-auto"><img src={SiteLogo} alt="" /></div>
                             <div className="social_icons">
-                                <a href="/"><FaTwitter /></a>
-                                <a href="/"><FaDiscord /></a>
-                                <a href="/"><FaPaperPlane /></a>
-                                <a href="/"> <img src={FooterIcon} alt="" /></a>
+                                <a href="https://twitter.com/FootballApeFC"><FaTwitter /></a>
+                                <a href="https://discord.gg/JNkSPf2Ktm"><FaDiscord /></a>
+                                <a href="https://www.instagram.com/FootballApeFanClub/"><FaPaperPlane /></a>
+                                <a href="https://linktr.ee/FootballApeFc"> <img src={FooterIcon} alt="" /></a>
                             </div>
                             <p>Copyright &copy; 2022. FAFC. All rights reserved.</p>
                         </div>
