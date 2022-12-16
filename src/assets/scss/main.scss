@@ -353,10 +353,13 @@
 .example_box {
   background: #1c1c1c;
   border-radius: 20px;
-  padding: 33px 24px 17px 24px;
+  padding: 45px 24px 17px 24px;
   position: relative;
+  margin-top: 50px;
 }
-
+.example_box p{
+    margin: 0;
+}
 .example_title {
   background: #ccf300;
   border-radius: 40px;
@@ -364,18 +367,21 @@
   padding: 10px 20px;
   position: absolute;
   left: 30px;
-  top: -10px;
+  top: -20px;
   color: #000000;
+  padding-left: 47px;
 }
+
 .example_title:before {
   position: absolute;
   content: "";
-  left: 0;
-  top: 0;
+  left: 20px;
+  top: 50%;
   width: 17px;
   height: 17px;
   background: #010101;
-  
+  border-radius: 50%;
+  transform: translateY(-50%);
 }
 // marquee_section
 .marquee {
