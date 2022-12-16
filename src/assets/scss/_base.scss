@@ -33,6 +33,12 @@ h2{
     & span{
         color: #CCF300;
     }
+    @include mmd{   
+        font-size: 45px;
+    }
+    @include sm{   
+        font-size: 40px;
+    }
 }
 p {
     margin: 0;
@@ -66,10 +72,19 @@ a {
     border: 1px solid $black;
     border-radius: 8px;
     margin-top: 30px;
+    &:hover{
+        background: #fff;
+        color: #010101;
+        border-color: #FFFFFF;
+    }
 }
 .boxed-btn.yellow{
     background: #CCF300;
     color: #010101;
+    &:hover{
+        background: #fff;
+        border-color: #FFFFFF;
+    }
 }
 .inline-btn{
     border: 1px solid #CCF300;

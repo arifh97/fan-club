@@ -6,7 +6,7 @@ import SiteLogo from '../assets/img/logo.png';
 
 function Header ()  {
     return(
-        <header className="heading"  sticky="top">
+        <header className="heading">
              <Navbar colnpmlapseOnSelect expand="lg"  variant="light">
                 <Container>
                     <Navbar.Brand href="#home"><img src={SiteLogo} alt="" /></Navbar.Brand>

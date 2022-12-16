@@ -7,10 +7,8 @@
 
 // Header_Section
 .heading {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
+  background-color: $primary;
   z-index: 999;
   padding: 20px 0;
   & .navbar-nav {
@@ -34,15 +32,23 @@
         border-bottom: 1px solid #000;
       }
     }
-    & .boxed-btn {
-      color: $white;
-      padding: 10px 20px;
-      margin: 0;
-    }
+    
   }
   & .navbar-collapse.show {
     background: #ccf300;
     padding: 15px 0;
+  }
+  & .header_right{
+    & .boxed-btn {
+      color: $white;
+      padding: 10px 20px;
+      margin: 0;
+      transition: all .3s ease-in-out;
+      font-size: 18px;
+      &:hover{
+        color: #010101;
+      }
+    }
   }
 }
 
@@ -54,13 +60,21 @@
     background-size: 100% 50%;
     background-repeat: no-repeat;
     background-position: bottom center;
-    padding-top: 251px;
+    padding-top: 110px;
     padding-bottom: 175px;
+    & .row{
+        @include mmd{
+            flex-direction: column-reverse;
+        }
+    }
   }
 
   &-content {
     &-left {
-      padding-right: 25px;
+      padding-right: 10px;
+      @include mmd{
+        margin-top: 50px;
+      }
 
       & span {
         font-size: 28px;
@@ -76,6 +90,12 @@
         line-height: 120%;
         color: #010101;
         margin-bottom: 25px;
+        @include mmd{
+            font-size: 45px;
+        }
+        @include sm{
+            font-size: 40px;
+        }
       }
 
       & p {
@@ -95,6 +115,10 @@
       position: relative;
       z-index: 1;
       padding-left: 25px;
+      @include mmd{
+        padding-left: 0px;
+
+      }
 
       .conut_down_box {
         background: #101010;
@@ -102,6 +126,9 @@
         border-radius: 30px;
         text-align: center;
         padding: 36px 30px 43px 30px;
+        @include ssm{
+        padding: 30px 15px 35px 15px;
+        }
 
         & h3 {
           font-weight: 800;
@@ -121,6 +148,15 @@
             padding: 35px 23px;
             background: #212121;
             border-radius: 15px;
+            @include lg{
+                padding: 15px 20px;
+            }
+            @include sm{
+                padding: 15px 20px;
+            }
+            @include ssm{
+                padding: 10px 10px;
+            }
 
             & h3 {
               font-family: "Inter";
@@ -130,6 +166,16 @@
               line-height: 120%;
               text-align: center;
               color: $primary;
+              @include lg{
+                font-size: 35px;
+              }
+              @include sm{
+                font-size: 35px;
+              }
+              @include ssm{
+                font-size: 25px;
+                margin-bottom: 0;
+              }
             }
 
             & span {
@@ -141,6 +187,10 @@
               text-align: center;
               color: $white;
               opacity: 0.5;
+              @include ssm{
+                font-size: 14px;
+                margin-top: 5px;
+              }
             }
           }
         }
@@ -153,6 +203,10 @@
           background: #212121;
           border-radius: 30px;
           padding: 10px 30px;
+          @include ssm{
+            background: transparent;
+            padding: 0;
+          }
         }
 
         & .countdown_box_bottom {
@@ -305,16 +359,29 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
+        @include ssm{
+            top: -20px;
+        }
       }
       & figure {
         margin-bottom: 0;
         width: 128px;
         height: 128px;
+        @include ssm{
+            width: 115px;
+            height: 115px;
+        }
       }
     }
   }
 
   & .about_content_right {
+    @include lg{
+        margin-top: 50px;
+    }
+    @include mmd{
+        margin-top: 50px;
+    }
     & span {
       font-weight: 400;
       font-size: 28px;
@@ -343,6 +410,18 @@
     }
   }
 }
+
+@media(max-width:576px){
+    .about-area .about_left .about_gallery_img_box {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.fafc_nfts_section {
+    padding-bottom: 80px;
+}
 //Fafc Nfts
 .fafc_content_left p {
   margin-bottom: 30px;
@@ -350,10 +429,22 @@
     font-weight: 800;
   }
 }
+
+.fafc_right{
+    padding-left: 30px;
+    
+    @include mmd{
+        margin-top: 30px;
+        padding-left: 0;
+        & figure{
+        text-align: center;
+        }
+    }
+}
 .example_box {
   background: #1c1c1c;
   border-radius: 20px;
-  padding: 45px 24px 17px 24px;
+  padding: 45px 24px 25px 24px;
   position: relative;
   margin-top: 50px;
 }
@@ -383,6 +474,20 @@
   border-radius: 50%;
   transform: translateY(-50%);
 }
+
+.arrow_down_left_angle {
+    padding-bottom: 50px;
+}
+.fafc_right {
+    text-align: right;
+}
+
+
+
+
+
+
+
 // marquee_section
 .marquee {
   &_section {

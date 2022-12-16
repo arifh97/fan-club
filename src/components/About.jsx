@@ -15,7 +15,7 @@ function About ()  {
         <div className="about-area">
             <Container>
                 <Row>
-                    <Col lg={6}>
+                    <Col xl={6}>
                         <div className="about_left">
                            <div className="about_gallery_img_box">
                                 <figure>
@@ -48,7 +48,7 @@ function About ()  {
                            </div>
                         </div>
                     </Col>
-                    <Col lg={6}>
+                    <Col xl={6}>
                         <div className="about_content_right">
                             <span>About</span>
                             <h2>Our Fan Club</h2>
