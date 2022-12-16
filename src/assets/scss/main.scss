@@ -53,8 +53,17 @@
       }
     }
   }
+  & .social_icons{
+    & a{
+        color: #212121;
+    }
+  }
 }
-
+@media(min-width:992px){
+    .heading .social_icons {
+        display: none;
+    }
+}
 // Hero Section
 .hero {
   &-area {
@@ -88,6 +97,11 @@
         margin-top: 50px;
         
       }
+      & .inline-btn {
+        border-color: #010101;
+        color: #010101;
+        margin-left: 15px;
+    }
       @include sm{
        text-align: center;
       }
@@ -230,7 +244,7 @@
 
         & .experience {
           font-weight: 400;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 150%;
           color: #ffffff;
           background: #212121;
@@ -260,10 +274,10 @@
         width: 189px;
         position: absolute;
         left: 50%;
-        translate: -50%;
         top: 0;
         margin-top: -33px;
         z-index: -1;
+        margin-left: -85px;
 
         &:after {
           position: absolute;
@@ -504,7 +518,7 @@
                 margin-bottom: 10px;
             }
             & h4{
-                @include font-21;
+                font-size: 19px;
                 margin-bottom: 30px;
                 font-weight: 800;
                 @include lg{

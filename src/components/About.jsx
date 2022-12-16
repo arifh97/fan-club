@@ -4,7 +4,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import AboutGalleryImg1 from "../assets/img/about/about-gallery-img1.png";
 function About ()  {
     return(
-        <div className="about-area">
+        <div className="about-area" id="about">
             <Container>
                 <Row>
                     <Col xl={6}>
@@ -27,8 +27,8 @@ function About ()  {
                             <p>Every FAFC holder will able to claim NFTs in multiple Upcoming NFTs project like Baby FAFC, Mutant FAFC, NFL NFTs and NBA NFTs and More in a period of one year <b>2022-2023.</b> </p>
 
                             <p>These are upcoming project from Football Ape Fan Club. </p>
-                            <a href="/" className="boxed-btn yellow">Register on Permint</a>
-                            <a href="/" className="inline-btn">Linktree</a>
+                            <a href="https://www.premint.xyz/football-ape-fan-club/" className="boxed-btn yellow">Register on Permint</a>
+                            <a href="https://linktr.ee/FootballApeFc" className="inline-btn">Linktree</a>
 
                         </div>
                     </Col>

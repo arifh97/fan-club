@@ -5,7 +5,7 @@ import FooterarrowShap from '../assets/img/5.png';
 import FooterIcon from '../assets/img/footer-icon.svg';
 import { FaTwitter } from 'react-icons/fa';
 import { FaDiscord } from 'react-icons/fa';
-import { FaPaperPlane } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 function Footer ()  {
     return(
@@ -28,7 +28,7 @@ function Footer ()  {
                             <div className="social_icons">
                                 <a href="https://twitter.com/FootballApeFC"><FaTwitter /></a>
                                 <a href="https://discord.gg/JNkSPf2Ktm"><FaDiscord /></a>
-                                <a href="https://www.instagram.com/FootballApeFanClub/"><FaPaperPlane /></a>
+                                <a href="https://www.instagram.com/FootballApeFanClub/"><FaInstagram /></a>
                                 <a href="https://linktr.ee/FootballApeFc"> <img src={FooterIcon} alt="" /></a>
                             </div>
                             <p>Copyright &copy; 2022. FAFC. All rights reserved.</p>
@@ -36,8 +36,8 @@ function Footer ()  {
                     </Col>
                 </Row>
              </Container>
-        </footer>
-    )
-}
+            </footer>
+        )
+    }
 
 export default Footer;

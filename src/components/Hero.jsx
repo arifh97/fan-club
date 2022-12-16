@@ -45,7 +45,8 @@ function Hero() {
                             <span>Welcome to the</span>
                             <h1>Football Ape Fan Club (FAFC)</h1>
                             <p><b>“The Football World Cup”</b> is one of the most anticipated sporting events in the world, and we are incredibly excited to announce launch of Football Ape Fan Club. We are launching collection consisting of <b>7,910 NFTs.</b> Our collection is inspired by our legendary footballers of all time.</p>
-                            <a href="/" className="boxed-btn">Join Discord</a>
+                            <a href="https://discord.gg/JNkSPf2Ktm" className="boxed-btn">Join Discord</a>
+                            <a href="https://mint.footballapefanclub.com" className="inline-btn">Mint</a>
                         </div>
                     </Col>
                     <Col lg={6}>
@@ -72,7 +73,7 @@ function Hero() {
                                     </div>
                                 </div>
                                 <div className="countdown_box_bottom">
-                                    <span className="experience">Instead of More than 10 Years of experience. Put Football Ape Fan Club Phase I Mint Starts Today @ 13:30 UTC!</span>
+                                    <span className="experience">Football Ape Fan Club Phase I Mint Starts Today @ 13:30 UTC!</span>
                                 </div>
                             </div>
                         </div>

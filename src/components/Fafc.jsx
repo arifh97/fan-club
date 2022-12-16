@@ -4,7 +4,7 @@ import ArrowDwonLeftAngle from "../assets/img/arrow_down_left_angle.png";
 import FafcRightImg from "../assets/img/fafc_right-img.png";
 function Fafc ()  {
     return(
-        <div className="fafc_nfts_section">
+        <div className="fafc_nfts_section" id="nfts">
             <Container>
                 <Row>
                     <Col className="text-center">

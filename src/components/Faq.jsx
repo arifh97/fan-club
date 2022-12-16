@@ -7,7 +7,7 @@ import Faq_Data from '../utils/FaqData'
 
 function Faq ()  {
     return(
-        <div className="faq-area">
+        <div className="faq-area" id='faq'>
             <Container>
                 <Row className="justify-content-center">
                     <Col xs={12} lg={10} className="text-center">

@@ -5,7 +5,7 @@ import ArrowDwonRightAngle from "../assets/img/arrow_down_right.png";
 import { progress_data } from "../utils/ProgressItems";
 function ApeFunProgress ()  {
     return(
-        <div className="progress_section">
+        <div className="progress_section" id="roadmap">
             <Container>
                 <Row>
                     <Col className="text-center">
@@ -31,7 +31,7 @@ function ApeFunProgress ()  {
                                 <h3>O.04ETH <span>(First Phase)</span></h3>
                             </div>
                           </div>
-                          <a href="/" className="boxed-btn yellow">Buy FAFC</a>
+                          <a href="https://mint.footballapefanclub.com/" className="boxed-btn yellow">Buy FAFC</a>
                         </div>
                     </Col>
                     <Col lg={6}>
