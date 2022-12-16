@@ -283,6 +283,39 @@
         filter: blur(300px);
         z-index: -1;
     }
+    & .about_left {
+        position: relative;
+        & .about_gallery_img_box {
+            position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                padding: 60px;
+                padding-top: 90px;
+                width: 540px;
+                margin: 0 auto;
+                z-index: 1;
+                &:before{
+                    position: absolute;
+                    content: "";
+                    left: 15px;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../img/about-left-gallery-shap.png");
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                }
+            & figure{
+                margin-bottom: 0;    
+                width: 128px;
+                height: 128px;
+            }
+        }
+    }
 
     & .about_content_right{
         & span {

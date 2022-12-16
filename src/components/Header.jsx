@@ -7,7 +7,7 @@ import SiteLogo from '../assets/img/logo.png';
 function Header ()  {
     return(
         <header className="heading"  sticky="top">
-             <Navbar collapseOnSelect expand="lg"  variant="light">
+             <Navbar colnpmlapseOnSelect expand="lg"  variant="light">
                 <Container>
                     <Navbar.Brand href="#home"><img src={SiteLogo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -17,10 +17,6 @@ function About ()  {
                 <Row>
                     <Col lg={6}>
                         <div className="about_left">
-                           <div className="about_gallery_shap"></div>
-                           <div className="about_gallery_shap_img">
-                            <img src={AboutShap} alt="" />
-                           </div>
                            <div className="about_gallery_img_box">
                                 <figure>
                                     <img src={AboutGalleryImg1} alt="" />
