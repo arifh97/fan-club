@@ -24,7 +24,16 @@ h6 {
     font-weight: 500;
     margin: 0 0 10px;
 }
-
+h2{
+    font-weight: 800;
+    font-size: 51px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    & span{
+        color: #CCF300;
+    }
+}
 p {
     margin: 0;
 }
@@ -46,7 +55,7 @@ a {
     @include transition;
 }
 
-.boxed-btn{
+.boxed-btn, .inline-btn{
     font-weight: 400;
     font-size: 21px;
     line-height: 120%;
@@ -58,6 +67,17 @@ a {
     border-radius: 8px;
     margin-top: 30px;
 }
+.boxed-btn.yellow{
+    background: #CCF300;
+    color: #010101;
+}
+.inline-btn{
+    border: 1px solid #CCF300;
+    color: #CCF300;
+    background: transparent;
+}
+
+
 .container{
     max-width: 1235px;
 }

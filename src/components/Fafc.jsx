@@ -25,8 +25,8 @@ function Fafc ()  {
                           <div className="example_box">
                             <div className="example_title">
                                 <span>Example</span>
-                                <p>If you hold <b>1 FAFC</b> you can claim <span>1 Mutant</span> and 1 BFAFC Nft for free. If you hold <b>50 FAFC</b> you can claim <b>50 Mutants</b> and <b>50 BFAFC Nft for free.</b> (Only Gas Fees will be Charged)</p>
                             </div>
+                                <p>If you hold <b>1 FAFC</b> you can claim <span>1 Mutant</span> and 1 BFAFC Nft for free. If you hold <b>50 FAFC</b> you can claim <b>50 Mutants</b> and <b>50 BFAFC Nft for free.</b> (Only Gas Fees will be Charged)</p>
                           </div>
                         </div>
                     </Col>

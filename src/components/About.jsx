@@ -59,7 +59,7 @@ function About ()  {
                             <p>Every FAFC holder will able to claim NFTs in multiple Upcoming NFTs project like Baby FAFC, Mutant FAFC, NFL NFTs and NBA NFTs and More in a period of one year <b>2022-2023.</b> </p>
 
                             <p>These are upcoming project from Football Ape Fan Club. </p>
-                            <a href="/" className="boxed-btn">Register on Permint</a>
+                            <a href="/" className="boxed-btn yellow">Register on Permint</a>
                             <a href="/" className="inline-btn">Linktree</a>
 
                         </div>
