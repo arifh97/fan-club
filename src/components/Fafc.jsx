@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Container, Row, Col} from "react-bootstrap";
+import AOS from "aos";
 import ArrowDwonLeftAngle from "../assets/img/arrow_down_left_angle.png";
 import FafcRightImg from "../assets/img/fafc_right-img.png";
 function Fafc ()  {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+
+    }, []);
     return(
         <div className="fafc_nfts_section" id="nfts">
             <Container>
                 <Row>
                     <Col className="text-center">
-                        <div className="arrow_down_left_angle">
+                        <div className="arrow_down_left_angle" data-aos="fade-right" data-aos-duration="800">
                             <figure>
                                 <img src={ArrowDwonLeftAngle} alt="" />
                             </figure>
@@ -18,11 +24,11 @@ function Fafc ()  {
                 <Row>
                     <Col lg={6}>
                         <div className="fafc_content_left">
-                          <h2><span>FAFC NFTs</span> are more than just an avatar!</h2>
+                          <h2 data-aos="fade-left" data-aos-duration="700"><span>FAFC NFTs</span> are more than just an avatar!</h2>
                           <p>Football Ape Fan Club is an NFT collection consisting of <b>7,910 FootballApeFC NFT</b> on the Ethereum blockchain. We will create an NFT Metaverse. We will bring more utility for every NFT project. </p>
 
                           <p>Every FAFC holder will able to Claim a Mutant Football Ape and Baby Football Ape NFT for free. Only gas fees will be charged. </p>
-                          <div className="example_box">
+                          <div className="example_box" data-aos="fade-up" data-aos-duration="800">
                             <div className="example_title">
                                 <span>Example</span>
                             </div>
@@ -31,7 +37,7 @@ function Fafc ()  {
                         </div>
                     </Col>
                     <Col lg={6}>
-                        <div className="fafc_right">
+                        <div className="fafc_right" data-aos="fade-left" data-aos-duration="900">
                            <figure>
                             <img src={FafcRightImg} alt="" />
                            </figure>
