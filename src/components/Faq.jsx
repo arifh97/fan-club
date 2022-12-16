@@ -10,14 +10,14 @@ function Faq ()  {
         <div className="faq-area">
             <Container>
                 <Row className="justify-content-center">
-                    <Col xs={10} className="text-center">
+                    <Col xs={12} lg={10} className="text-center">
                         <div className="arrow_down">
                             <figure>
                                 <img src={ArrowDwon} alt="" />
                             </figure>
                         </div>
                         <div className="section-title">
-                            <h3 className='mb-4 mb-md-5'>A Sports collection built with utility and <span className="text-primary d-block">community at its foundation</span></h3>
+                            <h3 className='mb-4 mb-lg-5'>A Sports collection built with utility and <span className="text-primary d-md-block">community at its foundation</span></h3>
                             <p>Once inside, you will have exclusive access to FAFC related drops, meetups and IRL events, and access to upcoming projects!</p>
                         </div>
                     </Col>

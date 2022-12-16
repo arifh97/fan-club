@@ -200,6 +200,17 @@
         }
         &_content {
             padding-right: 100px;
+            @include lg{
+                padding-right: 50px;
+            }
+            @include md{
+                padding-right: 0;
+                margin-bottom: 60px;
+            }
+            @include sm{
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
             & h2 {
                 @include font-50;
                 margin-bottom: 20px;
@@ -213,11 +224,17 @@
             & .supply{
                 &_price{
                     margin-bottom: 45px;
+                    @include mmd{
+                        margin-bottom: 30px;
+                    }
                 }
                 &_item{
                     width: 50%;
                     max-width: 100%;
                     flex: 0 0 auto;
+                    @include ssm{
+                        width: 100%;
+                    }
                     &> span{
                         font-size: 18px;
                         line-height: 1.5;
@@ -236,6 +253,9 @@
                             @include font-21;
                             margin-bottom: 0px;
                             font-weight: 800;
+                            @include lg{
+                                font-size: 17px;
+                            }
                         }
                     }
                 }
@@ -258,7 +278,12 @@
                 @include font-21;
                 margin-bottom: 30px;
                 font-weight: 800;
-
+                @include lg{
+                    margin-bottom: 20px;
+                }
+                @include mmd{
+                    margin-bottom: 24px;
+                }
             }
         }
     }
@@ -332,11 +357,15 @@
         margin-top: 215px;
         position: relative;
         z-index: 1;
-
+        @include md{
+            margin-top: 150px;
+        }
+        @include sm{
+            margin-top: 100px;
+        }
         & .overlay {
             display: none;
         }
-
         & figure {
             position: relative;
             z-index: 1;
@@ -346,7 +375,14 @@
             overflow: hidden;
             margin-right: 30px;
             margin-bottom: 30px;
-
+            @include md{
+                width: 284px;
+                height: 280px;
+            }
+            @include sm{
+                width: 244px;
+                height: 240px;
+            }
             & img {
                 @include img(cover);
             }
@@ -372,6 +408,12 @@
 
         & .accordion {
             margin-bottom: 105px;
+            @include md{
+                margin-bottom: 80px;
+            }
+            @include sm{
+                margin-bottom: 60px;
+            }
         }
 
         &-quote {
@@ -382,7 +424,10 @@
             padding-top: 40px;
             position: relative;
             z-index: 1;
-
+            @include sm{
+                padding: 20px 4%;
+                padding-top: 30px;
+            }
             & h3 {
                 @include font-38;
                 color: $black;
@@ -419,6 +464,9 @@
             font-size: 21px;
             line-height: 1.2;
             color: $white !important;
+            @include sm{
+                font-size: 18px;
+            }
 
             &::after {
                 content: "+";
@@ -429,6 +477,7 @@
                 font-weight: 500;
                 font-size: 16px;
                 border: 1px solid $primary;
+                line-height: 14px;
                 color: $primary;
                 text-align: center;
                 border-radius: 100%;
@@ -437,7 +486,6 @@
             &[aria-expanded=false] {
                 &::after {
                     content: "-";
-                    line-height: 15px;
                 }
             }
         }
@@ -464,7 +512,17 @@
         background-size: 80%;
         background-position: bottom center;
         background-repeat: repeat-x;
-
+        @include lg{
+            padding-bottom: 150px;
+        }
+        @include md{
+            padding-top: 70px;
+            padding-bottom: 120px;
+        }
+        @include sm{
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
         &::after {
             content: "";
             width: 100%;
@@ -479,23 +537,69 @@
             top: -100px;
             right: 72px;
             z-index: 0;
+            @include xxl{
+                width: 150px;
+                top: -70px;
+                right: 0;
+            }
+            @include xl{
+                width: 150px;
+                top: -70px;
+                right: 0;
+            }
+            @include mmd{
+                width: 130px;
+                right: 0;
+                top: -50px;
+            }
+            @include sm{
+                display: none;
+            }
         }
     }
 
     &_top_content {
         margin-bottom: 80px;
-
+        @include md{
+            margin-bottom: 60px;
+        }
+        @include sm{
+            margin-bottom: 40px;
+        }
         & h4 {
             @include font-28;
             margin-bottom: 60px;
+            @include lg{
+                margin-bottom: 40px
+            }
+            @include md{
+                margin-bottom: 30px
+            }
+            @include sm{
+                margin-bottom: 26px;
+            }
         }
 
         & p {
             @include font-22;
             line-height:calc(33px/22px);
-
+            @include md{
+                font-size: 18px;
+            }
+            @include sm{
+                font-size: 16px;
+            }
             &:not(:last-child) {
                 margin-bottom: 45px;
+                @include lg{
+                    margin-bottom: 35px;
+                }
+                @include md{
+                    margin-bottom: 30px;
+                }
+                @include sm{
+                    margin-bottom: 24px;
+                }
             }
         }
     }
@@ -509,7 +613,11 @@
             border-radius: 100%;
             position: relative;
             margin-bottom: 40px;
-
+            @include sm{
+                width: 87px;
+                height: 87px;
+                margin-bottom: 24px;
+            }
             & img {
                 @include img(cover);
             }
@@ -518,6 +626,9 @@
         & p {
             margin-top: 40px;
             font-size: 16px;
+            @include sm{
+                margin-top: 30px;
+            }
 
         }
     }

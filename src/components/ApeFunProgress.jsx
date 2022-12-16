@@ -31,7 +31,7 @@ function ApeFunProgress ()  {
                                 <h3>O.04ETH <span>(First Phase)</span></h3>
                             </div>
                           </div>
-                          <a href="/" className="boxed-btn">Buy FAFC</a>
+                          <a href="/" className="boxed-btn mt-0">Buy FAFC</a>
                         </div>
                     </Col>
                     <Col lg={6}>
